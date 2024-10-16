@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/icon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Yara</title>
+  </head>
+  <body>
+    <header><h1>Yara</h1></header>
+    <button id="modeBtn">Dark/Light Mode</button>
+    <nav>
+      <ul>
+        <li><a href="#about_me">About Me</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="about_me">
+      <h2>About Me</h2>
+      <article>
+        <p>
+          Yara, an architectural engineer interested in Software Engineering.
+        </p>
+        <img id="aboutMeImg" src="./assets/images/img.png" alt="Avatar" />
+        <button id="aboutMebtn">Click Here "Just Try :D "</button>
+      </article>
+    </section>
+    <section id="Projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <h3>Blog Website</h3>
+          <article>
+            <p>
+              A Blog created using Node.JS, Express, and MongoDB along with
+              several other 3rd party packages all listed in the dependencies
+              part in the package file with the exact versions used.
+            </p>
+            <figure>
+              <img
+                id="pImg"
+                src="./assets/images/blog.png"
+                alt="Project_Before_Specialization; Blog"
+              />
+              <figcaption>Project Before Specialization; Blog</figcaption>
+            </figure>
+            <a href="https://github.com/Yara-ib/BlogMe" target="_blank">
+              ~ You may Check it out from Here ~
+            </a>
+          </article>
+        </li>
+      </ul>
+    </section>
+    <section id="Skills">
+      <h2>Skills</h2>
+      <table>
+        <tr>
+          <th>Skill</th>
+          <th>Level</th>
+          <th>Experience</th>
+        </tr>
+        <tr>
+          <td>HTML && CSS</td>
+          <td>Intermediate</td>
+          <td>Less than a Year</td>
+        </tr>
+      </table>
+    </section>
+    <section id="Contact">
+      <h2>Contact</h2>
+      <form>
+        <label for="Name">Name</label>
+        <input type="text" id="name" />
+        <br />
+        <label for="Email">Email</label>
+        <input type="email" id="email" />
+        <br />
+        <label for="Message">Message</label>
+        <input type="text" id="message" />
+        <br />
+        <button type="submit" id="submitBtn">Submit</button>
+        <button type="reset" id="resetBtn">Reset</button>
+      </form>
+    </section>
+    <br />
+    <br />
+    <button id="topBtn">Top</button>
+    <footer>
+      <p class="footerTxt">~ All rights reserved &copy; 2024, Yara ~</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
