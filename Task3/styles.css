@@ -204,9 +204,14 @@ html {
 }
 
 #topBtn {
-  display: block;
+  display: none;
   position: fixed;
-  background-color: #99b080;
-  width: 500px;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0.75rem;
+  color: #f3d0d7;
+  background-color: #b1334d;
   border: #b1334d;
+  border: none;
+  cursor: pointer;
 }

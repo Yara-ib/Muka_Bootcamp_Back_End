@@ -32,24 +32,30 @@ const switchMode = () => {
   });
 };
 
-// Still have a problem with it, will check it again
-const scrollTop = () => {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById('topBtn').style.display = 'block';
-  } else {
-    document.getElementById('topBtn').style.display = 'none';
-  }
-};
-
+// Smooth Scrolling along with CSS property
 const scrollTopSmooth = () => {
   document.getElementById('topBtn').addEventListener('click', () => {
     scrollTo({ top: 0, behavior: 'smooth' });
   });
 };
 
+// Scroll to Top button
+const scrollTop = () => {
+  window.addEventListener('scroll', () => {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      document.getElementById('topBtn').style.display = 'block';
+    } else {
+      document.getElementById('topBtn').style.display = 'none';
+    }
+  });
+};
+
+// Running all after loading
 document.addEventListener('DOMContentLoaded', () => {
   console.log('JavaScript is working!');
-  // Running all after loading
   switchMode();
   updatingAboutMeSection();
   validationForm();
