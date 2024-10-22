@@ -4,7 +4,7 @@ console.log('<::: Control Flow Tasks :::>', '\n');
 // Task 1
 console.log(':: Task 1; Output ::');
 let age = 2;
-if (age === 18) {
+if (age >= 18) {
   console.log("You're allowed to vote, Go on!");
 } else {
   console.error("Sorry, you can't vote yet");
