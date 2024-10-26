@@ -1,0 +1,23 @@
+{
+  "name": "task9",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Task9: Arrays & Object Manipulation",
+  "main": "objectsManipulation.js",
+  "scripts": {
+    "test": "node objectsManipulation.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yara-ib/Muka_Bootcamp_Back_End.git#main"
+  },
+  "keywords": [
+    "JS"
+  ],
+  "author": "Yara | Muka BootCamp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yara-ib/Muka_Bootcamp_Back_End/issues"
+  },
+  "homepage": "https://github.com/Yara-ib/Muka_Bootcamp_Back_End/tree/main#readme"
+}
