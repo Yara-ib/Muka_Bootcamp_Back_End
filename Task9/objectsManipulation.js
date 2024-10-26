@@ -65,5 +65,58 @@ const getListStudentIdSum = (array) => {
     );
   }
 };
+console.log(
+  `Output of getListStudentIdSum Task: ${getListStudentIdSum(
+    getListStudentsIds(studentList)
+  )}`
+);
 
-console.log(getListStudentIdSum(getListStudentsIds(studentList)));
+// ~ Task 5 ~
+export const weakmap = new WeakMap();
+let count = 0;
+const queryAPI = (endpoint) => {
+  if (endpoint) {
+    console.log('One endpoint down, more to go');
+  }
+};
+
+let endpoints = [
+  {
+    Endpoint: 'https://api.twitter.com/1.1/statuses/user_timeline.json',
+    Description:
+      'Returns a collection of the most recent tweets posted by the user specified by the "screen name" or "userid" parameters.',
+  },
+  {
+    Endpoint: 'https://api.github.com/users/{username}',
+    Description: 'Retrieves information about a specific GitHub user.',
+  },
+  {
+    Endpoint: 'https://www.googleapis.com/youtube/v3/search',
+    Description:
+      'Returns a list of search results that match the specified query parameters.',
+  },
+  {
+    Endpoint: 'https://maps.googleapis.com/maps/api/geocode/json',
+    Description:
+      'Converts addresses into geographic coordinates, such as latitude and longitude, and vice versa.',
+  },
+  {
+    Endpoint: 'https://localhost:3000',
+    Description: 'Just extra one for testing the task',
+  },
+];
+
+// This only set one value no matter how many items been set; replaces each other
+for (const endpoint of endpoints) {
+  weakmap.set(queryAPI, endpoint);
+}
+console.log(weakmap.get(queryAPI));
+
+// So now, it'll be replaced entirely by list of objects; endpoints
+weakmap.set(queryAPI, endpoints);
+
+if (weakmap.get(queryAPI).length >= 5) {
+  throw new Error('Endpoint load is high');
+} else {
+  console.log(weakmap.get(queryAPI).length);
+}
