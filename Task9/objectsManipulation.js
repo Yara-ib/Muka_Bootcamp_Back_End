@@ -73,7 +73,6 @@ console.log(
 
 // ~ Task 5 ~
 export const weakmap = new WeakMap();
-let count = 0;
 const queryAPI = (endpoint) => {
   if (endpoint) {
     console.log('One endpoint down, more to go');
